@@ -1,7 +1,8 @@
-This is the assignment for Speakx.
+<h1>This is the assignment for Speakx.
 It isn't fully completed.
+</h1>
 
-<h2>
+<h2 style="color:red">
   Used Technologies are:
 </h2>
 <ol>
@@ -11,4 +12,5 @@ It isn't fully completed.
   <ul>GRPC for communicatiob between Frontend and backend</ul>
   <ul>Tried docker but failed due to limitable knowledge</ul>
 
-</ol>
+</ol
+
