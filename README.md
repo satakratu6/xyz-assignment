@@ -2,7 +2,7 @@
 It isn't fully completed.
 </h1>
 
-<h2 style="color:red">
+<h2 style="color:red;">
   Used Technologies are:
 </h2>
 <ol>
