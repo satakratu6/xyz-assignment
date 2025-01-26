@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package questions;
+
+// Question message representing a question entity
+message Question {
+  string id = 1;
+  string title = 2;
+  string description = 3;
+}
+
+// Request message for search with pagination
+message SearchRequest {
+  string title = 1; // Query string for searching questions
+  int32 page = 2;   // Page number for pagination
+  int32 limit = 3;  // Number of results per page
+}
+
+// Response message containing a list of questions and pagination metadata
+message SearchResponse {
+  repeated Question questions = 1; // List of matching questions
+  int32 current_page = 2;          // Current page number
+  int32 total_pages = 3;           // Total number of pages
+  int32 total_questions = 4;       // Total number of matching questions
+}
+
+// Service definition for question-related operations
+service QuestionService {
+  rpc SearchQuestions(SearchRequest) returns (SearchResponse);
+}
